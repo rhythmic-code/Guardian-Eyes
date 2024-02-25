@@ -70,7 +70,7 @@ face_detection = mp_face_detection.FaceDetection(min_detection_confidence=0.5)
 
 # Initialize OpenVINO Inference Engine
 ie = IECore()
-model_xml = 'D:/LVR/venv/lol.xml'  # Replace with path to the XML file of your face recognition model
+model_xml = 'lol.xml'  # Replace with path to the XML file of your face recognition model
 # model_bin = 'lol.bin'  # Replace with path to the BIN file of your face recognition model
 net = ie.read_network(model=model_xml)
 exec_net = ie.load_network(network=net, device_name='CPU')
