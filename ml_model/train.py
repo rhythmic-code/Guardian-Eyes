@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 people = ['Rhythm']
-dir_path = r"lol.xml"
+dir_path = r"training_data"
 features = []
 labels = []
 
@@ -17,7 +17,9 @@ def create_train():
         label = people.index(person)
 
         for img_name in os.listdir(dir_path):
+            print("DEBUG!!: ", img_name)
             img_path = os.path.join(dir_path, img_name)
+            print(img_path)
             img_array = cv2.imread(img_path)
             gray = cv2.cvtColor(img_array, cv2.COLOR_BGR2GRAY)
             face_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)
