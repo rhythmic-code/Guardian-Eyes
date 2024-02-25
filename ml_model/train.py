@@ -8,7 +8,7 @@ features = []
 labels = []
 
 # Load Haar cascade classifier
-haar_cascade_path = r"D:\LVR\venv\lol.xml"
+haar_cascade_path = r"lol.xml"
 haar_cascade = cv2.CascadeClassifier(haar_cascade_path)
 
 def create_train():
