@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 people = ['Rhythm']
-dir_path = r"D:\LVR\venv\references"
+dir_path = r"lol.xml"
 features = []
 labels = []
 
